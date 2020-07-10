@@ -1,0 +1,70 @@
+@import "fonts";
+@import "mq";
+@import "palette";
+// @import "enhancer";
+
+.interactive-atom {
+    margin: 0;
+    padding: 0;
+}
+
+body, .interactive-wrapper {
+	background-color: white;
+}
+
+iframe.interactive-atom-fence {
+	width: 100%;
+	display: inline-block;
+}
+
+#toc {
+	width: 100%;
+	display: none;
+	position: relative;
+	text-align: left;
+
+	.table_of_contents_container {
+		width: 100%;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		background-color: #ececec;
+		color: black;
+		box-sizing: border-box;
+		padding: 10px;
+		font-family: 'Guardian Text Sans Web';
+		font-size: 13px;
+		display: block;
+	}
+
+	td {
+		padding-bottom: 5px;
+		padding-top: 5px
+	}
+
+	.table_of_contents {
+		width: 100%
+	}
+	.table_of_contents td {
+		cursor: pointer
+	}
+	.table_of_contents td:hover {
+		color: darkgrey
+	}
+	.table_of_contents tr {
+		/*border-bottom: 1pt dotted darkgrey;*/
+		padding: 30px
+	}
+	.table_of_contents tr:last-child {
+		border-bottom: none;
+		padding-bottom: 0px
+	}
+	.back_to_table_of_contents {
+		cursor: pointer;
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		background-color: #005689;
+		float: left
+	}
+
+}
